@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+	<title></title>
+	<style type="text/css">
+		body, html, h2  {
+			margin: 0;
+			padding: 0;
+		}
+		.title {
+			text-align: center;
+		}
+		body {
+			font: 2em/1.5em sans-serif;
+			background-color: lightblue;
+		}
+		header, footer {
+			background-color: yellow;
+			min-height: 2em;
+			width: 100%;
+			padding: .5em;
+		}
+		header {
+			margin-bottom: .5em;
+		}
+		/** {
+			border: 1px solid black;
+		}*/
+		.links {
+			display: inline-block;
+		}
+		.toys {
+			/*height: 200px;*/
+			background-color: pink;
+			padding: .5em;
+
+		}
+		#circle {
+			height: 100px;
+			width: 100px;
+			/*background-color: green;*/
+			border: 2px solid #333;
+			padding: .5em;
+			margin: 1em;
+			border-radius: 50%;
+			animation: flip 1s infinite;
+		}
+		@keyframes flip {
+			from {
+
+			}
+		}
+		.redclass {
+			background-color: red;
+		}
+		.greenclass {
+			background-color: green;
+		}
+		.flipped {
+
+		}
+
+
+
+
+
+
+		input[type=button] {
+			background-color: lightgreen;
+			font-size: 1em;
+		}
+		input[type=button]:hover {
+			background-color: darkgreen;
+		}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+
+			
+			$('#flip').click(function(){
+				if($('#circle').hasClass('greenclass')){
+					$('#circle').addClass('redclass').removeClass('greenclass');
+				}
+				else if ($('#circle').hasClass('redclass')) {
+					$('#circle').addClass('greenclass').removeClass('redclass');
+				}
+
+
+				
+			});
+		});
+
+
+
+		
+	</script>
+</head>
+
+
+
+<body>
+	
+
+	<header>
+		<h2>This is Phoebe's page!!!</h2>
+	</header>
+
+
+
+	
+	<img src="phoebe_photo" height="300px" width="400">
+	
+
+
+	<div class="links">
+		<p>Phoebe loves lots of things...</p>
+		<ul>
+			<li><a href="http://environment.nationalgeographic.com/environment/photos/rainforests-tropical/#/rain-forest-canoe-congo_23897_600x450.jpg">Nature</a></li>
+			<li><a href="http://kids.nationalgeographic.com/animals/cheetah/#ww-wild-cats-cheetahs.jpg">Cheetahs</a></li>
+			<li><a href="http://www.mapsofworld.com/africa/">Africa</a></li>
+		</ul>
+		
+
+
+		<!-- <p><a href="">Animals</a></p> -->
+	</div>
+	<div class="toys">
+		<p>Toy Box...</p>
+			<div id="circle" class="greenclass"></div>
+		</div>	
+	<footer>
+		<input id="flip" type="button" name="circle" value="Flip Me">
+		
+	</footer>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,106 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #555; }
+
+.row {
+  width: 100%; }
+
+#container {
+  min-height: 100%;
+  position: relative;
+  clear: right; }
+
+#body {
+  background-image: url("../img/hops.jpg"); }
+
+.row {
+  margin: auto; }
+
+#header {
+  background: black;
+  padding: .25em;
+  margin-bottom: .5em; }
+
+#footer {
+  bottom: 0;
+  width: 100%;
+  padding: .5em;
+  /* Height of the footer */
+  background: black;
+  vertical-align: center; }
+
+form {
+  display: table;
+  border: 2px solid #888;
+  background-color: #999;
+  padding: .5em;
+  width: 100%; }
+
+p {
+  display: table-row; }
+
+label {
+  display: table-cell; }
+
+input {
+  display: table-cell;
+  margin-bottom: 1em; }
+
+form input {
+  display: block; }
+
+#map {
+  height: 20em;
+  border: 1px solid black; }
+
+#output {
+  min-height: 15em;
+  overflow: scroll; }
+
+.errText {
+  color: red; }
+
+.medium-pic {
+  max-height: 100px; }
+
+table {
+  width: 100%;
+  background-color: #e8daab;
+  margin-top: 1em;
+  border-radius: .5em;
+  padding: .25em;
+  min-height: 10em; }
+
+tr {
+  width: 100%;
+  margin-bottom: 1em;
+  border-bottom: 1px solid green; }
+
+td, th {
+  vertical-align: top;
+  padding: .5em; }
+
+tr:last-child {
+  border-bottom: none; }
+
+.clear {
+  clear: both; }
+
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: bock;
+  height: 0;
+  clear: both; }
+
+.right {
+  float: right;
+  display: inline-block; }
+
+#footer h4 {
+  display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
