@@ -49,7 +49,7 @@ function find_brewery(search_param, data) {
 		.done(function(response){
 			//console.log(response);
 			var data_arr = JSON.parse(response).data;
-			console.log(response);
+			console.log(data_arr);
 			if (data_arr) {
 				clear_fields();
 				var outputString = '';
